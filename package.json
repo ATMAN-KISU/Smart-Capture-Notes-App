@@ -1,0 +1,36 @@
+{
+  "name": "smart-capture-notes-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/expo/bin/cli start",
+    "android": "node ./node_modules/expo/bin/cli start --android",
+    "ios": "node ./node_modules/expo/bin/cli start --ios",
+    "web": "node ./node_modules/expo/bin/cli start --web",
+    "type-check": "node ./node_modules/typescript/bin/tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~58.0.15",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-community/cli": "^20.2.0",
+    "@react-native-community/cli-server-api": "^20.2.0",
+    "expo": "~58.0.21",
+    "expo-file-system": "~58.0.13",
+    "expo-font": "~58.0.11",
+    "expo-image-manipulator": "~58.0.16",
+    "expo-image-picker": "~58.0.10",
+    "expo-sqlite": "~58.0.14",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-web": "~0.21.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.3.0",
+    "typescript": "^5.3.3"
+  },
+  "private": true
+}

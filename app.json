@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Smart Capture & Notes App",
+    "slug": "smart-capture-notes-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "androidStatusBar": {
+      "backgroundColor": "#09090B",
+      "barStyle": "light-content",
+      "translucent": true
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#09090B",
+      "barStyle": "light-content"
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#09090B"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "themeColor": "#FDB913",
+      "backgroundColor": "#09090B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Smart Capture needs camera access to let you capture photos for your notes.",
+        "NSPhotoLibraryUsageDescription": "Smart Capture needs gallery access to let you pick photos for your notes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#09090B"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you attach pictures to your notes.",
+          "cameraPermission": "The app accesses your camera to let you take photos for your notes."
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true
+        }
+      ]
+    ]
+  }
+}
